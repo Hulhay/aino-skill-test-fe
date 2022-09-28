@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-mukta
+}
+
+.main-screen {
+    @apply flex flex-col justify-center items-center h-screen bg-main bg-center bg-no-repeat bg-contain
+}
+
+nav {
+    @apply flex justify-end w-4/5 m-auto fixed top-0
+}
+
+ul {
+    @apply flex justify-around w-1/5 py-6 text-xl
+}
+
+
+h1 {
+    @apply text-5xl text-red-primary font-bold
+}
+
+.auth-page {
+    @apply h-screen flex flex-col justify-center items-center bg-main bg-center bg-no-repeat bg-contain
+}
+
+.auth-container {
+    @apply flex flex-col justify-center items-center
+}
+
+.auth-heading {
+    @apply text-5xl text-red-primary font-bold mb-2
+}
+
+form {
+    @apply flex flex-col items-center
+}
+
+input {
+    @apply w-5/6 p-2 mb-1 border-none rounded text-gray-600 outline-none
+}
+
+.button-auth {
+    @apply bg-red-primary py-1 px-5 text-white mt-8 w-3/5 rounded-lg text-center cursor-pointer border-none text-lg
+}
+
+.button-logout {
+    @apply bg-red-primary py-1 px-5 text-white mt-8 rounded-lg text-center cursor-pointer border-none text-lg
+}
+
+.note {
+    @apply text-xs mt-3
+}
